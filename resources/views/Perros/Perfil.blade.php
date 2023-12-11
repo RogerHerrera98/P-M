@@ -25,14 +25,60 @@
         <p style="font-family: 'Vibur', cursive;" class="text-sm text-black text-center ">Carnet</p>
     </div>
 </nav>
-<div class="bg-[#946e36] w-full h-16 flex justify-center items-center ">
+<div class="bg-[#c09489] w-full h-16 flex justify-center items-center ">
 
-            <h1 style="font-family: 'Vibur', cursive;" class="text-2xl text-white">Perfil del perro</h1>
+            <h1 style="font-family: 'Vibur', cursive;" class="text-4xl text-white">Registro</h1>
 
 </div>
-<div class="w-full h-full bg-[url('/Recursos/Fondo_Inicio.jpg')]">
+<div class="h-screen  w-full bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center" style="background-image: url('Recursos/Fondo_Inicio.jpg');">
+    <div class=" w-4/5 h-full  bg-[#c09489]/50 my-1">
+        <div class="w-full h-full flex flex-row justify-center items-center px-4 py-2">
+            <form action="" method="post" class="w-2/5 h-full  ">
+               <div class="flex flex-col justify-center items-center mt-16 w-full">
+               <div class="flex flex-col w-2/3 mb-4">
+                    <label for="nombre"  style="font-family: 'Wendy One', sans-serif" class="text-white text-lg">Nombres</label>
+                    <input type="text" name="nombre" id="nombre"  style="font-family: 'Wendy One', sans-serif" class="rounded-full bg-[#b1796c] pl-4 h-8 text-md">
+                </div>
+                <div class="flex flex-col w-2/3 mb-4">
+                    <label for="apellido" style="font-family: 'Wendy One', sans-serif" class="text-white text-lg">Apellidos</label>
+                    <input type="text" name="apellido" id="apellido" style="font-family: 'Wendy One', sans-serif" class="rounded-full bg-[#b1796c] pl-4 h-8 text-md">
+                </div>
+                <div class="flex flex-col w-2/3 mb-4">
+                    <label for="email" style="font-family: 'Wendy One', sans-serif" class="text-white text-lg">Correo Electrónico</label>
+                    <input type="email" name="email" id="email" style="font-family: 'Wendy One', sans-serif" class="rounded-full bg-[#b1796c] pl-4 h-8 text-md">
+                </div>
+                <div class="flex flex-col w-2/3 mb-4 relative">
+                    <label for="contra" style="font-family: 'Wendy One', sans-serif" class="text-white text-lg">Contraseña</label>
+                    <input type="password" name="contra" id="contra" style="font-family: 'Wendy One', sans-serif" class="rounded-full bg-[#b1796c] pl-4 pr-7 h-8 text-md">
+                    <div>
+                    <img src="Recursos/Huella_Contra.webp" alt="" class="w-8 h-8 absolute bottom-0 right-0">
+                    </div>
+                </div>
+                <div class="flex flex-col w-2/3 mb-4 relative">
+                    <label for="confContra" style="font-family: 'Wendy One', sans-serif" class="text-white text-lg">Confirma contraseña </label>
+                    <input type="password" name="confContra" id="confContra" style="font-family: 'Wendy One', sans-serif" class="rounded-full bg-[#b1796c] pl-4 pr-7 h-8 text-md ">
+                    <div>
+                    <img src="Recursos/Huella_Contra.webp" alt="" class="w-8 h-8 absolute bottom-0 right-0">
+                    </div>
+                </div>
 
-    <!-- Contenido adicional dentro del div si es necesario -->
+                <div class="flex flex-col justify-center items-center w-28 h-28 mb-4 relative hover:bg-[#b1796c] rounded-full">
+                <img src="Recursos/Boton_Huella.png" alt="" class="w-28 h-28">
+                    <div class="w-full flex flex-col justify-center items-center">
+                        <button type="submit" style="font-family: 'Luckiest Guy'" class="text-white absolute bottom-5 w-28">ENTRAR</button>
+                    </div>
+                </div>
+               </div>
+
+
+                </form>
+            <div class="w-2/5 h-full flex flex-col items-center justify-start">
+                <img src="Recursos/Foto_Registro2.png" alt="" class="w-2/3 h-2/3 mt-10">
+
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
