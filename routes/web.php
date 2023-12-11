@@ -84,4 +84,6 @@ Route::get('/tabla', function () {
 })->name('tabla');
 
 
-
+Route::get('/Bienvenida', function () {
+    return view('Bienvenida');
+})->name('Bienvenida');
