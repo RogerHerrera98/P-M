@@ -54,10 +54,10 @@ Route::get('/Perfil_U', function () {
 
 Route::get('/Perros-Perfil', function () {
     return view('Perros/Perfil');
-})->name('Perfil_Perro');
+})->name('Perfil');
 
-Route::get('/Registro', function () {
-    return view('Registro');
+Route::get('/Perros-Registro', function () {
+    return view('Perros/Registro');
 })->name('Registro');
  
 
