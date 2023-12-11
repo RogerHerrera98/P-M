@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+
+             .phota{
+             position: absolute;
+         width: 119px;
+         height: 116px;
+         left: 310px;
+         top: 140px;
+         
+         background: url(Figma_PYM/perfil.png);
+        }
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +28,8 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Enlace a una hoja de estilo externa llamada style.css en la carpeta CSS -->
-    <title>Inicio de sesion</title>
+    @vite('resources/css/app.css')
+    <title>Registro</title>
 </head>
 
 <form class="bg-[#DCD4BF]"> <!-- Cuerpo de la página con clases de Tailwind CSS para diseño flexible -->
@@ -45,17 +58,18 @@
             </div>
         </div>
     </nav>
-   
-<p>Hola mundo asdhjkasdhjkasdjkasdgjkasdgjkasdgjkasdgjkasdgjkasdgjkasdgjkasdgjkasdgkasdgjkasdgjkgjkasdgjkasdgjkasdgjkasdgjk</p>
-<p>Hey bro si estas leyendo esto genia, se realizao el enlace entre los repositorios </p>
-    <div class=" bg-[url('/Figma_PYM/Fondo_Inicio.jpg')] bg-w-screen bg-cover">
+
+    <div class=" bg-[url('/Recursos/perro.png')] bg-w-screen bg-cover">
         <div class="md:container md:mx-auto md:w-1/2 md:max-w-screen-md py-1 p-10 ">
 
             <div class=" p-10 rounded shadow-md w-full bg-[#854d0e] bg-opacity-70">
                 <div class="container mb-4">
                     <div class=" items-center justify-center h-screen">
-                        <img class="object-none object-center w-[100%] h-[50%] " src="Recursos/Logo.png"
-                            alt="Foto del proyecto">
+                        <div class="relative flex justify-center items-center">
+                            <hr class="z-10 absolute top-1/2 w-full border-t-2 border-black transform -translate-y-1/2">
+                            <img class="z-50 object-none  my-4 " src="Recursos/perfil.png" alt="Foto del proyecto">
+                        </div>
+                        <!-- <img class="object-none w-[100%] h-[30%] " src="Figma_PYM/perfil.png" alt="Foto del proyecto"> -->
                         <label for="username" class="block text-sm text-white"
                             style="font-family: 'Wendy One', sans-serif">Correo</label>
                         <!-- Etiqueta y campo de entrada para el correo -->
@@ -84,7 +98,7 @@
                             <input type="checkbox" class="accent-orange-800" checked> Recordar Contraseña
                         </div>
                         <div class="flex items-center justify-center">
-                            <img src="Recursos/Boton_Huella.png" alt="" class=" w-25 h-20 relative">
+                            <img src="Recusos/Botón_Huella.png" alt="" class=" w-25 h-20 relative">
                             <button class="md:block hidden absolute text-white text-center"
                                 style="font-family: 'Luckiest Guy', cursive;">
                                 Entrar
@@ -93,10 +107,12 @@
                         <br>
                         <div class="text-center text-amber-900">
                             <ul class="">
-                                <li><a href="./Registro.html">Crear cuenta</a></li>
-                                <li><a href="./Recordar.html">Olvide mi contraseña</a></li>
+                                <li><a style="font-family: 'Vibur', cursive;" class="text-2xl md: text-xl" href="./Registro.html">Crear cuenta</a></li>
+                                <li><a style="font-family: 'Vibur', cursive;" class="text-2xl md: text-xl" href="./Recordar.html">Olvide mi contraseña</a></li>
+                                <hr style="border: 1px solid black;">
                             </ul>
 
+                            
                         </div>
 
                     </div>
@@ -106,5 +122,5 @@
         </div>
     </div>
 </form>
-<!-- Hey bro si estas leyendo esto genia, se realizao el enlace entre los repositorios  -->
+
 </html>
