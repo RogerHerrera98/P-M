@@ -53,7 +53,7 @@ Route::get('/Perfil_U', function () {
 })->name('Perfil_Usuario');
 
 Route::get('/Perfil_P', function () {
-    return view('Perfil_Perro');
+    return view('Perros/Perfil_Perro');
 })->name('Perfil_Perro');
 
 Route::get('/Registro', function () {
@@ -84,4 +84,6 @@ Route::get('/tabla', function () {
 })->name('tabla');
 
 
-
+Route::get('/Bienvenida', function () {
+    return view('Bienvenida');
+})->name('Bienvenida');
