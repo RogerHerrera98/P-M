@@ -15,11 +15,26 @@
     <title>Perfil del Perro</title>
 </head>
 <body>
-<nav class="bg-[#E3EEFF] h-20 w-full text-white flex flex-col md:flex-row md:justify-between md:px-7 md:py-4 text-xl">
-<div>
-<h1 style="font-family: 'Moo Lah Lah', sans-serif;" class="text-black md:p-5 text-3xl">P&M</h1>
-                <img class="w-[60px] h-[60px]" src="Recursos/Logo.png" alt="">
+<nav class="bg-[#E3EEFF] h-20 w-full flex flex-row justify-between items-center">
+    <div class="flex justify-between items-center m-1">
+        <h1 style="font-family: 'Moo Lah Lah', sans-serif;" class="text-black md:p-5 text-3xl">P&M</h1>
+        <img class="w-14 h-14" src="Recursos/Logo2.png" alt="Icono P&M">
+    </div>
+    <div class="flex flex-col justify-center items-center m-1">
+        <img src="Recursos/Carnet.png" alt="carnet" class="w-14 h-14">
+        <p style="font-family: 'Vibur', cursive;" class="text-sm text-black text-center ">Carnet</p>
+    </div>
+</nav>
+<div class="bg-[#946e36] w-full h-16 flex justify-center items-center ">
+
+            <h1 style="font-family: 'Vibur', cursive;" class="text-2xl text-white">Perfil del perro</h1>
+
 </div>
-    </nav>
+<div class="w-full h-full bg-[url('/Recursos/Fondo_Inicio.jpg')]">
+
+    <!-- Contenido adicional dentro del div si es necesario -->
+</div>
+
+
 </body>
 </html>
