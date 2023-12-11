@@ -52,8 +52,8 @@ Route::get('/Perfil_U', function () {
     return view('Perfil_Usuario');
 })->name('Perfil_Usuario');
 
-Route::get('/Perfil_P', function () {
-    return view('Perros/Perfil_Perro');
+Route::get('/Perros-Perfil', function () {
+    return view('Perros/Perfil');
 })->name('Perfil_Perro');
 
 Route::get('/Registro', function () {
