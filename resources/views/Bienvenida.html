@@ -21,43 +21,43 @@
    
 
 
-<body> <!-- Cuerpo de la página con clases de Tailwind CSS para diseño flexible -->
+<body class="bg-cover bg-center md:bg-no-repeat md:h-screen relative" style="background-image: url('Recursos/Fondo_Bienvenida.jpg')"> <!-- Cuerpo de la página con clases de Tailwind CSS para diseño flexible -->
 
     <nav class="bg-[#E3EEFF] h-20 w-full text-white flex flex-col md:flex-row md:justify-between md:px-7 md:py-4 text-xl">
     <div class="flex justify-between top-0 w-full">
         <div class="flex justify-between items-center ml-1">
         <h1 style="font-family: 'Moo Lah Lah', sans-serif;" class="text-black md:p-5 text-3xl">P&M</h1>
-        <img class="w-[60px] h-[60px]" src="PYM/Logo.png" alt="">
+        <img class="w-[60px] h-[60px]" src="Recursos/Logo.png" alt="">
     </div>
 
     <div class="md:block hidden">
-        <button class="w-[50px] h-[50px]"><img src="PYM/face.png" alt=""></button>
+        <button class="w-[50px] h-[50px]"><img src="Recursos/face.png" alt=""></button>
 
-        <button class="w-[50px] h-[50px]"><img src="PYM/insta.png" alt=""></button>
+        <button class="w-[50px] h-[50px]"><img src="Recursos/insta.png" alt=""></button>
 
-        <button class="w-[50px] h-[50px]"><img src="PYM/twiter.png" alt=""></button>
+        <button class="w-[50px] h-[50px]"><img src="Recursos/twiter.png" alt=""></button>
 
     </div>
 
     <div class="flex items-center md:space-x-5 space-x-0">
 
         <div class="flex flex-col items-center">
-            <button class="w-[50px] h-[50px] md:block hidden"><img src="PYM/sobre-nosotros.png" alt=""></button>
+            <button class="w-[50px] h-[50px] md:block hidden"><img src="Recursos/sobre-nosotros.png" alt=""></button>
         <h1 class="font-sans-serif text p-2 md:p-0  text-black text-sm md:text-lg">Sobre Nosotros</h1>
         </div>
 
         <div class="flex flex-col items-center">
-            <button class="w-[50px] h-[50px] md:block hidden"><img src="PYM/perfil.png" alt=""></button>
+            <button class="w-[50px] h-[50px] md:block hidden"><img src="Recursos/perfil.png" alt=""></button>
         <h1 class="font-sans-serif text p-2 md:p-0  text-black text-sm md:text-lg">Perfil</h1>
         </div>
 
         <div class="flex flex-col items-center">
-            <button class="w-[50px] h-[50px] md:block hidden"><img src="PYM/Idioma.png" alt=""></button>
+            <button class="w-[50px] h-[50px] md:block hidden"><img src="Recursos/Idioma.png" alt=""></button>
         <h1 class="font-sans-serif text p-2 md:p-0  text-black text-sm md:text-lg">Idioma</h1>
         </div>
 
         <div class="flex flex-col items-center">
-            <button class="w-[50px] h-[50px] md:block hidden"><img src="PYM/Contacto.png" alt=""></button>
+            <button class="w-[50px] h-[50px] md:block hidden"><img src="Recursos/Contacto.png" alt=""></button>
         <h1 class="font-sans-serif text p-2 md:p-0  text-black text-sm md:text-lg">Contacto</h1>
         </div>
     </div>
@@ -84,8 +84,8 @@
 
             <!-- Contenedor interno con fondo blanco, padding, bordes redondeados y sombra. -->
             
-            <div class="bg-cover bg-center md:bg-no-repeat md:h-screen relative" style="background-image: url('PYM/Fondo_Bienvenida.jpg')">
-                <div class="flex flex-col space-y-[450px] text-center items-center justify-center 
+
+                <div class="flex flex-col space-y-[450px] text-center items-center justify-center md:py-2
                  " >
                     <h2 class="font-[Praise] text-[#794A03] md:text-8xl text-6xl">Bienvenidos</h2>
 
@@ -93,13 +93,13 @@
 
                     
 
-                   <div class="absolute top-0">
+                   <div class="absolute top-0 ">
+                  
                     <div class="relative">
-                        <img src="PYM/Boton_Huella.png" alt="" class=" w-36 h-24 ">
-                        <button class="md:block hidden text-[#FDFCF8] absolute inset-x-0 bottom-0 py-2" style="font-family: 'Luckiest Guy', cursive;">Ingresar</button>
-                        
-                    </div>
-                   </div>
+                        <img src="Recursos/Boton_Huella.png" alt="" class="w-36 h-24 ">
+                        <button class="absolute bottom-1 left-10 mb-4 text-white " style="font-family: 'Luckiest Guy', cursive;">Ingresar</button>
+                      </div>
+                   
 
                           
 
@@ -107,7 +107,7 @@
                     
                    
                 </div>
-               
+            
             </div>
             <!-- Título de la sección de inicio de sesión -->
             
