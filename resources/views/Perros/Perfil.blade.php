@@ -53,47 +53,52 @@
                             class="rounded-full bg-[#e0ae65] px-4 h-8 text-md" oninput="validarNumero2()">
                         <p id="mensaje2" class="text-red-500 text-sm mt-2"></p>
                     </div>
-                    <div>
-                        <label for="dateNacimiento" style="font-family: 'Wendy One', sans-serif"
+
+                    <div class="flex flex-col w-1/2 mb-4">
+                        <label for="sexo" style="font-family: 'Wendy One', sans-serif"
                             class="text-[#781e08] text-lg">Sexo</label>
                         <div class="flex flex-row justify-between space-x-4 w-1/2">
-                            <div class="flex flex-row ">
-                            <input type="checkbox" name="checkHembra" id="checkHembra" class="w-5 h-5">
-                            <label for="checkHembra" style="font-family: 'Wendy One', sans-serif"
-                                class="text-[#781e08] text-lg">Hembra</label>
+                            <div class="flex flex-row justify-center items-center">
+                                <input type="checkbox" name="checkHembra" id="checkHembra" class="w-7 h-7 ">
+                                <label for="checkHembra" style="font-family: 'Wendy One', sans-serif"
+                                    class="text-[#781e08] text-lg">Hembra</label>
                             </div>
-                           <div class="flex flex-row justify-center items-center">
-                            <input type="checkbox" name="checkMacho" id="checkMacho"  class="w-5 h-5">
-                            <label for="checkMacho" style="font-family: 'Wendy One', sans-serif"
-                                class="text-[#781e08] text-lg">Macho</label>
+                            <div class="flex flex-row justify-center items-center">
+                                <input type="checkbox" name="checkMacho" id="checkMacho" class="w-7 h-7 ">
+                                <label for="checkMacho" style="font-family: 'Wendy One', sans-serif"
+                                    class="text-[#781e08] text-lg">Macho</label>
 
-                           </div>
+                            </div>
                         </div>
 
                     </div>
-                    <div>
+                    <div class="flex flex-col w-1/2 mb-4">
                         <label for="dateNacimiento" style="font-family: 'Wendy One', sans-serif"
                             class="text-[#781e08] text-lg">Fecha de nacimiento</label>
-                        <input type="date" name="dateNacmiento" id="dateNacmiento">
+                        <input type="date" name="dateNacmiento" id="dateNacmiento"  class="rounded-full bg-[#e0ae65] px-4 h-8 text-md" value="">
 
                     </div>
-                    <div>
-                        <label for="dateNacimiento" style="font-family: 'Wendy One', sans-serif"
+                    <div class="flex flex-col w-1/2 mb-4">
+                        <label for="Discapacidad" style="font-family: 'Wendy One', sans-serif"
                             class="text-[#781e08] text-lg">Discapacidad</label>
-                        <div>
-                            <input type="checkbox" name="checkSi" id="checkSi">
-                            <label for="checkSi" style="font-family: 'Wendy One', sans-serif"
-                                class="text-[#781e08] text-lg">Si</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" name="checkNo" id="checkNo">
-                            <label for="checkNo" style="font-family: 'Wendy One', sans-serif"
-                                class="text-[#781e08] text-lg">No</label>
+                        <div class="flex flex-row justify-between w-1/2">
+                            <div class="flex flex-row justify-center items-center">
+                                <input type="checkbox" name="checkSi" id="checkSi" class="w-7 h-7 ">
+                                <label for="checkSi" style="font-family: 'Wendy One', sans-serif"
+                                    class="text-[#781e08] text-lg">Si</label>
+                            </div>
+                            <div class="flex flex-row justify-center items-center">
+                                <input type="checkbox" name="checkNo" id="checkNo" class="w-7 h-7 ">
+                                <label for="checkNo" style="font-family: 'Wendy One', sans-serif"
+                                    class="text-[#781e08] text-lg">No</label>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <button type="button">Editar</button>
-                        <img src="Recursos/Boton_Hueso.png" alt="">
+                    <div class="relative flex items-center justify-center w-1/2 h-1/4">
+                        <img src="Recursos/Boton_Hueso.png" alt="" class="">
+                        <div class="absolute">
+                        <button type="button" style="font-family: 'Luckiest Guy'" class="w-1/2 h-1/2 text-[#781e08] text-2xl">Editar</button>
+                        </div>
 
                     </div>
 

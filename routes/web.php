@@ -66,6 +66,9 @@ Route::get('/registrou', function () {
     return view('registrou');
 })->name('registrou');
  
+Route::get('/Dashboard', function () {
+    return view('Dashboard');
+})->name('Dashboard');
 
 Route::get('/Actualizar', function () {
     return view('Actualizar');
