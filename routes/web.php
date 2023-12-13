@@ -53,6 +53,18 @@ Route::get('/Gato-Recordatorio', function () {
     return view('Gatos/recordatorio');
 })->name('Gato-Recordatorio');
 
+Route::get('/Perro-Vacunacion', function () {
+    return view('Perros/vacunaciones');
+})->name('Perro-Vacunacion');
+
+Route::get('/Perro-Desparasitaciones', function () {
+    return view('Perros/desparasitaciones');
+})->name('Perro-Desparasitaciones');
+
+Route::get('/Perro-Recordatorio', function () {
+    return view('Perros/recordatorio');
+})->name('Perro-Recordatorio');
+
 
 Route::get('/', function () {
     return view('Inicio_Sesion');
@@ -63,15 +75,18 @@ Route::get('/Perfil_U', function () {
     return view('Perfil_Usuario');
 })->name('Perfil_Usuario');
 
-Route::get('/Perros-Perfil', function () {
+Route::get('/Perro-Perfil', function () {
     return view('Perros/Perfil');
-})->name('Perfil');
+})->name('Perro-Perfil');
 
-Route::get('/Perros-Registro', function () {
+Route::get('/Perro-Registro', function () {
     return view('Perros/Registro');
-})->name('Registro');
+})->name('Perro-Registro');
  
-
+Route::get('/Gato-Perfil', function () {
+    return view('Gatos/Perfil');
+})->name('Gato-Perfil');
+ 
  
 Route::get('/registrou', function () {
     return view('registrou');
