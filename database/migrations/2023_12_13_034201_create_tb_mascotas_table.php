@@ -11,22 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tbusuario', function (Blueprint $table) {
+        Schema::create('tb_mascotas', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->string('apellido');
-            $table->string('correo_electronico');
-            $table->string('password');
+            $table->date('fecha');
+            $table->string('etiqueta');
+            $table->string('vacuna');
+            $table->date('fecha_prox');
+            $table->foreign('id_mascota')->references('id')->on('tb_mascotas');
             $table->timestamps();
-           
         });
     }
-  
+
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('tbusuario');
+        Schema::dropIfExists('tb_mascotas');
     }
 };
