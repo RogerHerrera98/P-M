@@ -41,6 +41,17 @@ Route::get('/vacunas2', function () {
     return view('vacunas2');
 })->name('vacunas');
 
+Route::get('/Gato-Vacunacion', function () {
+    return view('Gatos/vacunaciones');
+})->name('Gato-Vacunacion');
+
+Route::get('/Gato-Desparasitaciones', function () {
+    return view('Gatos/desparasitaciones');
+})->name('Gato-Desparasitaciones');
+
+Route::get('/Gato-Recordatorio', function () {
+    return view('Gatos/recordatorio');
+})->name('Gato-Recordatorio');
 
 
 Route::get('/', function () {
