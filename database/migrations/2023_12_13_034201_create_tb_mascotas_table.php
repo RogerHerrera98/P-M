@@ -13,11 +13,15 @@ return new class extends Migration
     {
         Schema::create('tb_mascotas', function (Blueprint $table) {
             $table->id();
-            $table->date('fecha');
-            $table->string('etiqueta');
-            $table->string('vacuna');
-            $table->date('fecha_prox');
-            $table->foreign('id_mascota')->references('id')->on('tb_mascotas');
+            $table->string('nombre');
+            $table->string('especie');
+            $table->enum('sexo', ['H', 'M']); 
+            $table->date('fecha_nacimiento');
+            $table->string('raza');
+            $table->string('color');
+            $table->string('caracterisiticas');
+
+           
             $table->timestamps();
         });
     }
